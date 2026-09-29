@@ -627,6 +627,13 @@ section {
   color: var(--text-muted);
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
 /* CLI Drawer */
 .cli-drawer {
   position: fixed;
@@ -729,6 +736,7 @@ footer {
   .bento-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .reviews-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
   .metrics-strip { grid-template-columns: repeat(2, 1fr); }
   nav.main-nav { display: none; }
   .cli-drawer { width: 100%; right: 0; }
@@ -1278,7 +1286,7 @@ footer {
       <h2 class="section-title">Initiate Contact or Project Inquiry</h2>
       <p class="section-desc">Available for Senior / Lead WordPress roles, complete Elementor Pro website builds, classic theme maintenance, and headless WooCommerce builds.</p>
 
-      <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;align-items:start;">
+      <div class="contact-grid">
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:8px;padding:2rem;">
           <p style="margin-bottom:1.5rem;color:var(--text-primary);font-weight:600;">Verified Endpoints:</p>
           <div style="font-size:0.85rem;margin-bottom:1rem;">
